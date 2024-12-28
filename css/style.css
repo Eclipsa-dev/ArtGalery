@@ -631,7 +631,7 @@ textarea {
 
 .boton-contacto,
 .boton-guardar,
-.boton-agregar {
+.boton-agregar-cart {
   display: inline-block;
   padding: 8px 10px;
   text-align: center;
@@ -655,13 +655,13 @@ textarea {
   color: white;
 }
 
-.boton-agregar {
+.boton-agregar-cart {
   background-color: #4CAF50;
   color: white;
   border: none;
 }
 
-.boton-agregar:hover {
+.boton-agregar-cart:hover {
   background-color: #45a049;
 }
 
