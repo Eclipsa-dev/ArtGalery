@@ -13,30 +13,46 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Ubicación</title>
 </head>
-<nav>
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="Why.html">Acerca de</a></li>
-        <li><a href="Ubicaciòn.html">Ubicaciòn</a></li>
-    </ul>
-</nav>
-<main class="ubicacion-main">
-    
-    <section id="contacto-title">
-        <h2 >Inicio</h2>
-        <p> ¡Aqui podras contactarnos!</p>
-    </section>
 
-    <section id="about">
-        <section id="contact">
-            <h2>Consultas</h2>
-            <p> Si tenés alguna duda, sugerencia o simplemente queres un cuadro personalizado. Te pedimos que llenes tus datos y tu motivo de consulta. En breve nos estaremos contactando </p>
-        </setion>
-            
+<body>
+
+    <header>
+        <div class="page-tittle">
+            <h1>GALERIA DE ARTE</h1>
+        </div>
+
+        <nav class="header-navbar">
+            <ul>
+                <li><a href="../pages/Why.html"> ¿Quienes Somos?</a></li>
+                <li><a href="../pages/Cuadros.html"> Nuestros Cuadros</a> </li>
+                <li><a href="../pages/Contacto.html">Contacto</a></li>
+                <li><a href="../pages/Ubicacion.html">Ubicación</a></li>
+                <li><a href="../index.html">Volver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="contacto-title">
+            <h2>Inicio</h2>
+            <p> ¡Aqui podras contactarnos!</p>
+        </section>
+
+        <section id="about">
+            <section id="contact">
+                <h2>Consultas</h2>
+                <p> Si tenés alguna duda, sugerencia o simplemente queres un cuadro personalizado. Te pedimos que llenes
+                    tus
+                    datos y tu motivo de consulta. En breve nos estaremos contactando </p>
+            </section>
+
             <form action="https://formspree.io/f/xbljdqew" method="POST">
 
                 <fieldset class="contacto-form">
-                    <legend><h2>Formulario de Contacto</h2></legend>
+                    <legend>
+                        <h2>Formulario de Contacto</h2>
+                    </legend>
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -46,16 +62,16 @@
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <button type="submit">Enviar</button>
+                    <button class="submit-button" type="submit">Enviar</button>
                 </fieldset>
             </form>
         </section>
-</main>
+    </main>
 
-<!-- Pie de página -->
-<footer>
-    <p>&copy; The three cats Orange. Derechos Reservados. 2024</p>
-</footer>
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; The three cats Orange. Derechos Reservados. 2024</p>
+    </footer>
 
 </body>
 

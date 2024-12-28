@@ -10,39 +10,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script src="/scripts/app.js"></script>
+
+    <title>GALERIA DE ARTE</title>
 </head>
 
 <body>
-    <header><div class="contenedor">
-        <h1>GALERIA DE ARTE</h1>
-    </div></header>
-    <nav>
-    <ul class="header-navbar">
-        <li><a href="pages/Why.html"> ¿Quienes Somos?</a></li>
-        <li><a href="pages/Cuadros.html"> Nuestros Cuadros</a> </li>
-        <li><a href="pages/Contacto.html">Contacto</a></li>
-        <li><a href="pages/Ubicación.html">Ubicación</a></li>
-    </ul> </nav>
+    <!-- Encabezado -->
+    <header>
+        <div class="page-tittle">
+            <h1>GALERIA DE ARTE</h1>
+        </div>
 
-    <div class="empty"></div>
+        <nav class="header-navbar">
+            <ul>
+                <li><a href="pages/Why.html"> ¿Quienes Somos?</a></li>
+                <li><a href="pages/Cuadros.html"> Nuestros Cuadros</a> </li>
+                <li><a href="pages/Contacto.html">Contacto</a></li>
+                <li><a href="pages/Ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="two-column-container">
+        <!-- Barra lateral -->
+        <aside>
+            <ul class="trending-items">
+                <li class="item">
+                    <h2>Cuadro 1</h2>
+                    <p>$120</p>
+                    <div class="rating">★★★★☆</div>
+                </li>
+                <li class="item">
+                    <h2>Cuadro 2</h2>
+                    <p>$250</p>
+                    <div class="rating">★★★★★</div>
+                </li>
+                <li class="item">
+                    <h2>Cuadro 3</h2>
+                    <p>$85</p>
+                    <div class="rating">★★★☆☆</div>
+                </li>
+                <li class="item">
+                    <h2>Cuadro 4</h2>
+                    <p>$60</p>
+                    <div class="rating">★★★★☆</div>
+                </li>
+                <li class="item">
+                    <h2>Cuadro 5</h2>
+                    <p>$150</p>
+                    <div class="rating">★★★★★</div>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="index-main">
+
+            <iframe src="https://www.youtube.com/embed/NrVg3HYTHKU" frameborder="0" width="40%" height="400px"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia possimus ducimus distinctio blanditiis
+                sit
+                ab dolore tenetur voluptate minus repudiandae maiores perferendis nobis quas amet sunt, veritatis
+                asperiores
+                odit ipsum.</p>
+
+        </main>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; The three cats Orange. Derechos Reservados. 2024</p>
+    </footer>
+
 </body>
-<section class="index-video">
-
-    <iframe
-        src="https://www.youtube.com/embed/NrVg3HYTHKU" 
-        frameborder="0" 
-        width="40%" 
-        height="400px" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
-</section>
-</div>
-<!-- Pie de página -->
-<footer>
-    <p>&copy; The three cats Orange. Derechos Reservados. 2024</p>
-</footer>
 
 </body>
+
 </html>
