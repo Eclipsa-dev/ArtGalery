@@ -272,7 +272,230 @@ margin-top: 5%;
     text-align: left;
   }
 }
+/* CARRITO */
+.btn-carrito {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
 
+.btn-carrito:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.btn-carrito i {
+    font-size: 24px;
+}
+
+/* Cart Styles */
+#carrito {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+#carrito h2 {
+  margin-top: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+#carrito-items {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#carrito-total {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+#carrito-total p {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#carrito button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#carrito button:hover {
+  background-color: #45a049;
+}
+
+/* Cart Toggle Button */
+.cart-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.cart-toggle:hover {
+  background-color: #45a049;
+}
+
+/* Product Card Styles */
+#columna{
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  min-width: 300px;
+  margin-right: 350px;
+  padding: 20px;
+  perspective: 1000px;
+  justify-content: end;
+  overflow: hidden;
+}
+
+/* Enhanced Card Styles */
+.card-cart {
+  border: none;
+  width: 30dvw;
+  border-radius: 15px;
+  padding: 20px;
+  background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,1) 70%);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  
+  &:hover {
+    transform: translateY(-5px) rotateX(2.5deg) rotateY(-2.5deg);
+    background: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,1) 70%);
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  p{
+    padding: 10px;
+    text-align: end;
+  }
+}
+
+.card-title {
+  color: #2c3e50;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(0.25turn, #3498db, #2ecc71, rgba(56,2,155,0));
+  border-image-slice: 1;
+  width:100%;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+  }
+}
+
+.card-text {
+  color: #34495e;
+  font-size: 0.95em;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.boton-agregar {
+  align-self: flex-end;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+    transition: all 0.5s;
+  }
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+    
+    &::before {
+      left: 100%;
+    }
+  }
+  
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+
+/* Otra cosa */
 
 #about{
       display: flex;

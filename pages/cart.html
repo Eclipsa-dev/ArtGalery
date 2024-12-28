@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Galería de Arte</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="page-tittle">
+            <h1>GALERIA DE ARTE - Carrito</h1>
+        </div>
+        <nav class="header-navbar">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Why.html">¿Quienes Somos?</a></li>
+                <li><a href="Cuadros.html">Nuestros Cuadros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <div id="columna" class="productos-grid">
+                <!-- Los productos se agregarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Tu Carrito</h2>
+            <div id="carrito-items">
+                <!-- Los items del carrito se mostrarán aquí -->
+            </div>
+            <div id="carrito-total">
+                <p>Subtotal: $<span id="subtotal-carrito">0.00</span></p>
+                <p>Descuento: $<span id="descuento-carrito">0.00</span></p>
+                <p>IVA: $<span id="iva-carrito">0.00</span></p>
+                <p>Total: $<span id="total-carrito">0.00</span></p>
+            </div>
+            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; The three cats Orange. Derechos Reservados. 2024</p>
+    </footer>
+
+    <script src="../scripts/app.js"></script>
+</body>
+</html>
